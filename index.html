@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculadora Básica</h2>
+        <input type="number" id="num1" class="input-field" placeholder="Número 1">
+        <input type="number" id="num2" class="input-field" placeholder="Número 2">
+        <div class="buttons">
+            <button class="btn add animated-btn" onclick="calculate('+')">+</button>
+            <button class="btn subtract animated-btn" onclick="calculate('-')">-</button>
+            <button class="btn multiply animated-btn" onclick="calculate('*')">×</button>
+            <button class="btn divide animated-btn" onclick="calculate('/')">÷</button>
+        </div>
+        <p class="result-display">Resultado: <span id="result">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
